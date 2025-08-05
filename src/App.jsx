@@ -21,7 +21,7 @@ function App() {
   };
 
   const delateTask = (id) => {
-    setTasks(prev => [...prev,filter(task => task.id !== id)]);
+    setTasks(prev => prev.filter(task => task.id !== id));
   };
 
   const updateTask = (updatedTask) => {
